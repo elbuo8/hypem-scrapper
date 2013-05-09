@@ -1,0 +1,23 @@
+{
+  "name": "hypem-scrapper",
+  "version": "0.0.0",
+  "description": "Simple module to obtain stream of hypem metaid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github.com/elbuo8/hypem-scrapper",
+  "keywords": [
+    "hypem",
+    "hype",
+    "machine",
+    "hype",
+    "machine"
+  ],
+  "author": "Yamil Asusta (elbuo8)",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.21.0",
+    "async": "~0.2.8"
+  }
+}
