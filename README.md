@@ -5,7 +5,7 @@ This is a simple module used to obtain the URL of a specific song be providing i
 ```js
 var hypem;
 
-hypem = require('hypem-scapper');
+hypem = require('hypem-scrapper');
 
 //Async
 hypem.getUrl('1wdx7', function(error, url) {
