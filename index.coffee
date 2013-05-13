@@ -22,7 +22,7 @@ getUrlSync = (metaid, callback) ->
                 key = JSON.parse(body[num].replace '</script>', '').tracks[0].key
                 serveUrl = 'http://hypem.com/serve/source/' + metaid + '/' + key + '?_=' + new Date().getTime()
                 request.get serveUrl, (error, response, body) ->
-                    if response.statusCode == 200 then callback null, JSON.parse(body).url else callback JSON.parse(body), null
+                    if response.statusCode == 200 then callback null, JSON.parse(body).url else callback body, null
 
 
 
@@ -40,7 +40,7 @@ getUrl = (metaid, callback) ->
             key = JSON.parse(line.replace '</script>', '').tracks[0].key
             serveUrl = 'http://hypem.com/serve/source/' + metaid + '/' + key + '?_=' + new Date().getTime()
             request.get serveUrl, (error, response, body) ->
-                if response.statusCode == 200 then callback null, JSON.parse(body).url else callback JSON.parse(body), null
+                if response.statusCode == 200 then callback null, JSON.parse(body).url else callback body, null
 
 
 exports.getUrlSync = getUrlSync

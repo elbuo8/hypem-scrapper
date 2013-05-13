@@ -34,7 +34,7 @@
             if (response.statusCode === 200) {
               return callback(null, JSON.parse(body).url);
             } else {
-              return callback(JSON.parse(body), null);
+              return callback(body, null);
             }
           }));
         } else {
@@ -70,7 +70,7 @@
           if (response.statusCode === 200) {
             return callback(null, JSON.parse(body).url);
           } else {
-            return callback(JSON.parse(body), null);
+            return callback(body, null);
           }
         });
       });
