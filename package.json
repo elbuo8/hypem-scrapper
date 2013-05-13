@@ -1,6 +1,6 @@
 {
   "name": "hypem-scrapper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple module to obtain stream of hypem metaid",
   "main": "index.js",
   "scripts": {
